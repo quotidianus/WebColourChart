@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Nuancier Web</title>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="NuancierWeb.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/json2/20160511/json2.js"></script>
+</head>
+<body>
+	<div id="ct">
+		<header>
+			<h1>Nuancier Web CSS 3</h1>
+			<div id="descr">
+				<strong>Vous êtes ici dans la balise &lt;header&gt;.</strong> Le titre se trouve dans la balise <strong>&lt;h1&gt;</strong>.
+				Sélectionnez une balise avec le menu <em>Choisir partie</em>, 
+				puis sélectionner la couleur de son fond et de son texte avec les menus <em>Couleur fond</em> et <em>Couleur texte</em>.
+				Nota bene : &lt;h1&gt; et &lt;header&gt; possèdent le même fond.
+			</div>
+		</header>	
+		<nav></nav>
+		<aside>
+			<div>
+				<strong>Vous êtes ici dans la balise &lt;aside&gt;.</strong><br>
+				<br>
+				<div id="userCol"></div>
+			</div>
+		</aside>
+		<main>
+			<div>
+				<strong>Vous êtes ici dans la balise &lt;main&gt;.</strong><br>
+				<br>
+				Pour changer les couleurs, procéder de cette façon :
+				<ol>
+					<li>
+						Sélectionner une balise avec le menu <em>Choisir partie</em>.
+						La balise choisie s'affiche alors en haut du menu, en majuscule.
+						Tant qu'elle demeure affichée, le choix des couleurs s'appliquera à elle.
+					</li>
+					<li>
+						Sélectionner la couleur à appliquer :<br>
+						• avec le menu <em>Couleur fond</em>, pour changer la couleur du fond,<br>
+						• avec le menu <em>Couleur texte</em>, pour changer la couleur du texte.
+					</li>
+					<li>
+						Pour sélectionner une autre partie, repasser la souris sur même menu (là ou se trouve le nom de la balise affichée en majuscule), puis choisir la balise voulue en cliquant sur son nom.
+					</li>
+				</ol>
+				Nous vous conseillons de changer d'abord tous les fonds et ensuite de choisir la couleur des textes.
+				Il est également conseillé de ne pas avoir plus de trois couleurs différentes (excepté un ton neutre en plus, pour &lt;body&gt;).
+				Vous pouvez, par exemple, avoir une première couleur pour &lt;#menu&gt; et &lt;footer&gt;, une seconde couleur pour &lt;header&gt; et &lt;aside&gt; et, enfin, une troisième couleur pour &lt;main&gt;.
+				Les couleurs vives vont bien pour les textes courts.
+				Mais pour les textes longs, il est plus agréable d'avoir un ton neutre et bien lisible (excepté pour le footer, où l'on peut mettre une couleur moins apparente).<br>
+				<br>
+				À vos palettes pour rechercher et trouver de belles harmonies colorées&nbsp;!
+			</div>
+		</main>
+		<footer>
+			<div>
+				<strong>Vous êtes ici dans la balise &lt;footer&gt;.</strong>
+				Le fond du <strong>&lt;body&gt;</strong> apparaît seulement autour des autres parties, même si en réalité c'est lui qui contient l'ensemble des parties visibles de la page html. <br>
+			</div>
+		</footer>
+	</div>
+</body>
+<script src="NuancierWeb.js"></script>
+</html>

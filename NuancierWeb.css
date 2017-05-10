@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+body, ul, ol, li, h1, h2, h3, h4, h5, h6, p {
+	margin:0px;
+	padding:0px;
+}
+body {
+	font-family:Verdana,Geneva,sans-serif;
+	font-size:12px;
+	line-height:20px;
+	background-color:Gray;
+}
+#ct {
+	margin:auto;
+	width:700px;
+}
+header, aside, main, footer {
+	padding:25px;
+}
+header {
+	height:80px;
+	background-color:Gainsboro;
+}
+h1 {
+	background-color:inherit;
+}
+#descr{
+	margin-top:14px;	
+}
+nav {
+	margin:auto; 
+	width:700px;
+	height:32px;
+}
+aside {
+	clear:both;
+	float:left;
+	width:150px;
+	height:520px;
+	background-color:Silver;
+}
+main{
+	float:left;
+	width:450px;
+	height:520px;
+	text-align:justify;
+	background-color:Gainsboro;
+}
+footer {
+	clear:both;
+	height:60px;
+	background-color:DarkGray;
+}
+#menu, nav li {/*
+#menu est créé en jQuery et est inséré dans le <head>. Cet ID sert de référence pour changer dynamiquement les <nav li .menu>
+nav li sert ici seulement au premier affichage des nav li qui n'ont pas la classe .menu (menu Annuler et sous-menu des menus Couleur)
+*/
+	color:Black;
+	background-color:DarkGray;
+}
+ol  {
+	margin-left:15px;
+}
+a {
+	color:inherit;
+}
+a:hover {
+	color:Gray;
+}
+nav ul {
+	list-style:none;
+}
+nav li {
+	padding:2px 0 2px 0;
+	display:inline-block;
+	float:left;
+	width:140px; /*largeur de ct divisé par le nombre de menus*/
+	height:28px;
+	font-size:13px;
+	line-height:30px;
+	text-align:center;
+}
+nav ul li ul { /*décalage des sous-menus*/
+	position:relative;
+}
+.lidesact { /*sous-menus Annuler, lorsqu'ils sont désactivés*/
+	opacity:0.3;
+}
+nav ul li ul li ul { /*décalage des sous-sous-menus*/
+	position:relative;
+	left:140px;
+	top:-32px; /*moins line-height et moins padding*/
+}
+nav ul li ul li { /*masquer tous les sous-menus et sous-sous-menus*/
+	display:none;
+}
+/*affichage des sous-menus et sous-sous-menus au passage de la souris*/
+/* nav>ul>li:hover>ul>li, #m5:>ul>li, géré avec jQuery */nav>ul>li>ul>li:hover>ul>li, nav>ul>li>ul>li>ul>li:hover>ul>li {
+	display:inline-block;
+}
+/* géré avec jQuery
+nav>ul>li:hover, nav>ul>li>ul li:hover, nav .menu:hover {
+	color:white;
+	background-color:Silver;
+}
+*/
